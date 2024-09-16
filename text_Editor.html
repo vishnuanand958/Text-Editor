@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu Anand text editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        #h1 {
+            background-color: blue;
+            padding: 5px;
+            margin: 0%;
+            text-align: center;
+            font-size: 28px;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        #code-box {
+            margin: 20px auto;
+            width: 60%;
+            height: 450px;
+           
+        }
+
+        legend {
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        #code {
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-size: 18px;
+            outline: none;
+            
+        }
+
+        #result {
+            width: 100%;
+            height: 93%;
+            overflow: scroll;
+            padding: 10px;
+        }
+
+        #show {
+            display: none;
+            margin: 20px auto;
+            width: 60%;
+            height: 450px;
+
+        }
+
+        #run {
+            padding: 10px;
+            background-color: rgb(92, 92, 159);
+            font-weight: bold;
+
+            color: white;
+        }
+
+        #return {
+            padding: 10px;
+            background-color: rgb(92, 92, 159);
+            font-weight: bold;
+            display: none;
+            color: white;
+        }
+    </style>
+    <script src="text.js"></script>
+</head>
+
+
+<body>
+    <h1 id="h1">Vishnu Anand Text Editor V 1.0.0</h1>
+
+    <fieldset id="code-box">
+        <legend> Test Editor</legend>
+        <textarea id="code">
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Vishnu Text Editor</title>
+            </head>
+            <body>
+                
+            </body>
+            </html>
+        </textarea>
+
+
+
+    </fieldset>
+    <fieldset id="show">
+        <legend> Your Code Result</legend>
+        <div id="Result">
+
+        </div>
+    </fieldset>
+    <center>
+        <button id="run" onclick="runcode()">Run code!</button>
+        <button id="return" onclick="back()">Return to code</button>
+    </center>
+
+</body>
+
+</html>
